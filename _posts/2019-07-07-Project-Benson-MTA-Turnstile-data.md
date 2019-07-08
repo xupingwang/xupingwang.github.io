@@ -3,7 +3,7 @@ layout: post
 title: Project Benson: MTA Turnstile Data Analysis
 ---
 
-This is a test post. 
+
 
 To make a post, you must follow the naming convention shown for this file,
 with the data as the first part of the file name, seperated by dashes. Then
@@ -13,7 +13,7 @@ Finally, you must also keep the
 ```
 ---
 layout: post
-title: Xuping's Test Post
+title: Project Benson: MTA Turnstile Data Analysis
 ---
 ```
 
@@ -26,6 +26,12 @@ markdown-y things.
 [This is a link](http://thisismetis.com)
 
 ![Image test]({{ site.url }}/images/AlanLeeShireGandalf.JPG)
+
+![Image test]({{ site.url }}/images/topstations.png)
+
+![Image test]({{ site.url }}/images/mtadaily.png)
+
+![Image test]({{ site.url }}/images/fourhour.png)
 
 ### Other things
 * Like
