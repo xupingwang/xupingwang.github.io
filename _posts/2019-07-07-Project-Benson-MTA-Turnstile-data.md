@@ -3,29 +3,16 @@ layout: post
 title: Project Benson MTA Turnstile Data Analysis
 ---
 
+This is the my first week at [Metis](http://thisismetis.com) as a data science student. In the first project, my teammates and I take on the role of data scientists, to help our client, a fictional organization WTWY, to figure out the time and subway stations to place their volunteers, and collect as many signature as possible in front of the subway station.
+
+## Data and Method
+
+Due to the short amount of time given for the first project, we decided to work mostly on [MTA turnstile data](http://web.mta.info/developers/turnstile.html). We look for top stations in terms of entries count, and find out the day of week that has the most ridership. We belive the sheer size passenger flow will help the street team achieve their goal.
+
+## Result
 
 
-To make a post, you must follow the naming convention shown for this file,
-with the data as the first part of the file name, seperated by dashes. Then
-the name of the post as you want it to be stored, with spaces as dashes.
-Finally, you must also keep the 
 
-```
----
-layout: post
-title: Project Benson: MTA Turnstile Data Analysis
----
-```
-
-Part in the post to tell the page how to title your post and how to render it.
-
-Below are some examples of loading images, making links, and doing other
-markdown-y things.
-
-
-[This is a link](http://thisismetis.com)
-
-![Image test]({{ site.url }}/images/AlanLeeShireGandalf.JPG)
 
 ![Image test]({{ site.url }}/images/topstations.png)
 
