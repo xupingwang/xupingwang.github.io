@@ -25,10 +25,9 @@ The last question we can answer is: what is the best time in each weekday for th
 
 ## Conclusion
 
-We recommand WTWY sending street teams to the following stations:
+We recommand WTWY send out street teams on weekdays, during evening rush hour from 4pm to 8pm, to the following stations:
 * 34 Street Penn Station
 * Time Square 42nd street station
 * 42nd street Port Authority station
 * 86th street station
 * 34th street Herald Square station
-during weekdays evening rush hour from 4pm to 8pm. 
