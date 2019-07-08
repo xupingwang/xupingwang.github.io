@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Project Benson: MTA Turnstile Data Analysis
+title: Project Benson MTA Turnstile Data Analysis
 ---
 
 
