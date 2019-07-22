@@ -13,7 +13,7 @@ The data I obtained almost have a complete description of each car, these includ
 
 ## Feature Engineering
 
-The best performing model I built is the second degree polynormial model, the r^2 score is 0.96, but the model I like the most is the vanilla regression model, with as few features as possible. I did the feature selection with LASSO path diagram, see the picture below: 
+The best performing model I built is the second degree polynomial model, the r^2 score is 0.96, but the model I like the most is the vanilla regression model, with as few features as possible. I did the feature selection with LASSO path diagram, see the picture below: 
 
 ![LASSO feature selection]({{ site.url }}/images/carlasso.png)
 
@@ -27,11 +27,10 @@ I plotted the above diagram to see how well the two-feature linear regression mo
 
 ## Data Analysis
 
-The advantage of having a model with such simplicity is that, by looking at the coefficients of each feature, we can understand the composition of used car's price: it can be broken down into three parts: base price, annual depreciation and mileage depreciation. My model predict the base price of Toyota Camry to be $21,000. A used Camry will depreciate by it's age and mileage, at around $650 per year and $400 per 10,000 miles. A five year old 70,000 mileage Camry will depreciate $3,250 from it's age and $2,800 from the mileage, my model predict it worth $14, 950. 
+The advantage of having a model with such simplicity is that, by looking at the coefficients of each feature, we can understand the composition of used car's price: it can be broken down into three parts: base price, annual depreciation and mileage depreciation. My model predict the base price of Toyota Camry to be $21,000. A used Camry will depreciate by its age and mileage, at around $650 per year and $400 per 10,000 miles. A five year old 70,000 mileage Camry will depreciate $3,250 from its age and $2,800 from the mileage, my model predict it worth $14, 950. 
 
-To see which brand of car keeps its value the best, we can compare their depreciation factor. I fitted the same model to a new set of used ford fusion data, and found the main difference between ford fusion and Toyota Camry is that ford fusion has a 40% higher mileage depreciation. We can draw the conclusion that Toyota Camry hold the value better then Ford Fusion.
+To see which brand of car keeps its value the best, we can compare their depreciation factor. I fitted the same model to a new set of used ford fusion data, and found the main difference between ford fusion and Toyota Camry is that ford fusion has a 40% higher mileage depreciation. We can draw the conclusion that Toyota Camry hold the value better than Ford Fusion.
 
 ## Conclusion
 
-I builded a vanilla linear regression model that predict a used car's price based on it's mileage and age. This model can be trained on small data set yet makes good prediction. 
-
+I built a vanilla linear regression model that predict a used car's price based on its mileage and age. This model can be trained on small data set yet makes good prediction. From this model we can extract the annual and mileage depreciation factor of different brands and models of cars, this enables us to find the vehicles with the best resell values. 
