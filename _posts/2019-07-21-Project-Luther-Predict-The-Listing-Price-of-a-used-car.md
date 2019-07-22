@@ -27,16 +27,11 @@ I plotted the above diagram to see how well the two-feature linear regression mo
 
 ## Data Analysis
 
-The advantage of having a model with such simplicity is that, by looking at the coefficients of each feature, we can understand the composition of used car's price: it can be broken down into three parts: base price, annual depreciation and mileage depreciation. My model predict the base price of Toyota Camry to be $21,000. 
+The advantage of having a model with such simplicity is that, by looking at the coefficients of each feature, we can understand the composition of used car's price: it can be broken down into three parts: base price, annual depreciation and mileage depreciation. My model predict the base price of Toyota Camry to be $21,000. A used Camry will depreciate by it's age and mileage, at around $650 per year and $400 per 10,000 miles. A five year old 70,000 mileage Camry will depreciate $3,250 from it's age and $2,800 from the mileage, my model predict it worth $14, 950. 
 
-
-
+To see which brand of car keeps its value the best, we can compare their depreciation factor. I fitted the same model to a new set of used ford fusion data, and found the main difference between ford fusion and Toyota Camry is that ford fusion has a 40% higher mileage depreciation. We can draw the conclusion that Toyota Camry hold the value better then Ford Fusion.
 
 ## Conclusion
 
-We recommand WTWY send out street teams on weekdays, during evening rush hour from 4pm to 8pm, to the following stations:
-* 34 Street Penn Station
-* Time Square 42nd street station
-* 42nd street Port Authority station
-* 86th street station
-* 34th street Herald Square station
+I builded a vanilla linear regression model that predict a used car's price based on it's mileage and age. This model can be trained on small data set yet makes good prediction. 
+
