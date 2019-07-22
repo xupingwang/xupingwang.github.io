@@ -13,9 +13,13 @@ The data I obtained almost have a complete description of each car, these includ
 
 ## Data Analysis
 
-The best performing model I built is the second degree polynormial fitting, the r^2 $r^2$
+The best performing model I built is the second degree polynormial model, the r^2 score is 0.96, but the model I like the most is the vanilla regression model, with as few features as possible. I did the feature selection with LASSO path diagram, and found only the age and mileage of car has a large impact in a used car's price. 
 
-The baseline model with all features works very well, but I wanted to reduce the complexity of my model. And keep only the features that has large impact on the car price. I plotted the LARS path diagram. Each colored line represents the coefficient associated to a feature in our model, as we tune up the hyper parameter, from right to left, all of the categorical feature get damped out, leaving only age and mileage of the car in our final model. 
+
+![LASSO feature selection]({{ site.url }}/images/carlasso.png)
+
+
+Each colored line represents the coefficient associated to a feature in our model, as we tune up the hyper parameter, from right to left, all of the categorical feature get damped out, leaving only age and mileage of the car in our final model. 
 
 I plotted the next diagram to see how well our model performs. In the diagram, every point is the a comparison between predicted and actual price for one car. If we made the perfect prediction, the point will lie on the blue line. Overall the points distributed around the 45 degree line. Visually this model is making good predictions. I have also compute the r square score, which measures how well the 
 
@@ -23,7 +27,7 @@ The simplicity of my model make it possible for us to look directly at the equat
 
 
 
-![Image test]({{ site.url }}/images/fourhour.png)
+![predict vs actual price]({{ site.url }}/images/carpredict.png)
 
 The last question we can answer is: what is the best time in each weekday for the volunteers to do their work? In the third plot we trace the station averge entry count in a typical day. The traffic volume is the lowest in the midnight, then increases steadily till noon, it peaks during the evening rush hour then drop to minimun again at next day's midnight. The time we suggest is 4pm to 8pm.
 
